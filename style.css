@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	background-color: #EDEDED;
+}
+
+header {
+	background-color: #EDEDED;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #DADADA;
+	border-bottom-style: none;
+	padding: 3%;
+}
+
+header h1,
+header h2 {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+header h1 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight: 300;
+}
+
+header h2 {
+	font-size: 1.2em;
+	font-weight: 100;
+	color: #696969;
+}
+
+main > div {
+	background-color: white;
+	display: inline-block;
+	width: 42%;
+	height: 350px;
+	padding: 3%;
+}
+
+.left {
+	float: left;
+	margin-left: 10px;
+}
+
+.right {
+	float: right;
+	margin-right: 10px;
+}
+
+div h2 {
+	margin-top: 0;
+	font-size: 1.2em;
+	margin-bottom: 25px;
+}
+
+.table-container {
+	width: 100%;
+	max-height: 90%;
+	overflow-y: auto;
+	padding: 0;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #DADADA;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#table-name,
+#table-assigned {
+	font-weight: bold;
+	width: 25%;
+}
+
+#table-name {
+	padding-left: 5px;
+	align: right;
+}
+
+#table-date {
+	width: 50%;
+}
+
+tr {
+	height: 40px;
+}
+
+tr:nth-child(even) {
+	background-color: #EDEDED;
+}
+
+label {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 0.8em;
+	width: 100%;
+}
+
+input {
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #DADADA;
+}
+
+input[type=text] {
+	width: 100%;
+	height: 33px;
+	background-color: #EDEDED;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+input[type=button] {
+	background-color: #3F3F3F;
+	width: 100px;
+	height: 50px;
+	margin-top: 15px;
+	color: white;
+	font-size: 1.1em;
+}
