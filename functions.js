@@ -1,24 +1,20 @@
+/**
+ * Represents a row of data for the task table.
+ * @constructor
+ * @param {string} name - The name of the task.
+ * @param {string} date - The date the task was assigned.
+ * @param {string} assigned - Who the task was assigned to.
+ */
 function TaskData(name, date, assigned) {
 	this.name = name;
 	this.date = date;
 	this.assigned = assigned;
 }
 
-function addTask(){
-	var name = document.getElementById('name').value;
-	var date = document.getElementById('date').value;
-	var assigned = document.getElementById('assigned').value;
-	var table = document.getElementById('taskTable');
-	
-	var data = new TaskData(name, date, assigned);
-	
-	insertRow(table, data);
-}
-
 /**
  * Creates a table row from data.
  * @param {Object} table
- * @param {TaskData} taskData
+ * @param {Object} taskData
  */
 function insertRow(table, task) {
 	var row = table.insertRow(-1);
@@ -37,6 +33,23 @@ function insertRow(table, task) {
 
 }
 
+/**
+ * Adds a new task upon form submission.
+ */
+function addTaskFromForm(){
+	var name = document.getElementById('name').value;
+	var date = document.getElementById('date').value;
+	var assigned = document.getElementById('assigned').value;
+	var table = document.getElementById('taskTable');
+	
+	var data = new TaskData(name, date, assigned);
+	
+	insertRow(table, data);
+}
+
+/**
+ * Loads initial data into the Task Table.
+ */
 function loadData(){
 	var table = document.getElementById('taskTable');
 	
@@ -48,3 +61,5 @@ function loadData(){
 		insertRow(table, task);
 	}
 }
+
+window.onload = loadData;

@@ -3,6 +3,8 @@ body {
 	background-color: #EDEDED;
 }
 
+/*** HEADER ***/
+
 header {
 	background-color: #EDEDED;
 	border-style: solid;
@@ -29,6 +31,8 @@ header h2 {
 	color: #696969;
 }
 
+/*** CONTENT ***/
+
 main > div {
 	background-color: white;
 	display: inline-block;
@@ -37,20 +41,55 @@ main > div {
 	padding: 3%;
 }
 
-.left {
-	float: left;
-	margin-left: 10px;
-}
-
-.right {
-	float: right;
-	margin-right: 10px;
-}
-
 div h2 {
 	margin-top: 0;
 	font-size: 1.2em;
 	margin-bottom: 25px;
+}
+
+/*** CREATE A TASK BOX ***/
+
+#create-task-box {
+	float: left;
+	margin-left: 10px;
+}
+
+label {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 0.8em;
+	width: 100%;
+}
+
+input {
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #DADADA;
+}
+
+input[type=text] {
+	width: 100%;
+	height: 33px;
+	background-color: #EDEDED;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+input[type=button] {
+	background-color: #3F3F3F;
+	width: 100px;
+	height: 50px;
+	margin-top: 15px;
+	color: white;
+	font-size: 1.1em;
+}
+
+/*** EXISTING TASKS BOX ***/
+
+#existing-tasks-box {
+	float: right;
+	margin-right: 10px;
 }
 
 .table-container {
@@ -89,35 +128,4 @@ tr {
 
 tr:nth-child(even) {
 	background-color: #EDEDED;
-}
-
-label {
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 0.8em;
-	width: 100%;
-}
-
-input {
-	border-style: solid;
-	border-radius: 5px;
-	border-width: 1px;
-	border-color: #DADADA;
-}
-
-input[type=text] {
-	width: 100%;
-	height: 33px;
-	background-color: #EDEDED;
-	margin-top: 5px;
-	margin-bottom: 20px;
-}
-
-input[type=button] {
-	background-color: #3F3F3F;
-	width: 100px;
-	height: 50px;
-	margin-top: 15px;
-	color: white;
-	font-size: 1.1em;
 }

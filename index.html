@@ -6,13 +6,13 @@
 	<script src="data.js"></script>
 	<script src="functions.js"></script>
 </head>
-<body onload="loadData()">
+<body>
 	<header>
 		<h1>Task Tracker</h1>
 		<h2>v2.0</h2>
 	</header>
 	<main>
-		<div class="left">
+		<div id="create-task-box">
 			<h2>Create a Task</h2>
 			<form>
 				<label for="name">Task Name</label>
@@ -21,10 +21,10 @@
 				<input type="text" name="date" id="date">
 				<label for="assigned">Assigned To</label>
 				<input type="text" name="assigned" id="assigned">
-				<input type="button" onClick="addTask()" value="Submit">
+				<input type="button" onClick="addTaskFromForm()" value="Submit">
 			</form>
 		</div>
-		<div class="right">
+		<div id="existing-tasks-box">
 			<h2>Existing Tasks</h2>
 			<div class="table-container">
 				<table id="taskTable"></table>
